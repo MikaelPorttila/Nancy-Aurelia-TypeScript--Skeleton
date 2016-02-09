@@ -1,2 +1,2 @@
-# Nancy-Aurelia-TypeScript
+# Nancy-Aurelia-TypeScript--Skeleton
 Nancy + Aurelia (With TypeScript) template.
