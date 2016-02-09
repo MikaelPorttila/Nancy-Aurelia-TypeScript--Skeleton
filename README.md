@@ -1,2 +1,2 @@
-# Nancy-Aurelia
-Nancy + Aurelia template.
+# Nancy-Aurelia-TypeScript
+Nancy + Aurelia (With TypeScript) template.
