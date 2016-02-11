@@ -87,14 +87,20 @@
     <Content Include="build\tasks\prepare-release.js" />
     <Content Include="build\tasks\serve.js" />
     <Content Include="build\tasks\watch.js" />
-    <Content Include="config.js" />
-    <Content Include="gulpfile.js" />
+    <Content Include="config.js">
+      <DependentUpon>App.config</DependentUpon>
+    </Content>
+    <Content Include="gulpfile.js">
+      <DependentUpon>App.config</DependentUpon>
+    </Content>
     <Content Include="src\app.html" />
     <Content Include="src\child-router.html" />
     <Content Include="src\nav-bar.html" />
     <Content Include="src\users.html" />
     <Content Include="src\welcome.html" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <DependentUpon>App.config</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Lib\Bootstrap.cs" />
@@ -105,11 +111,18 @@
     <Content Include="Views\index.html">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <DependentUpon>App.config</DependentUpon>
+    </Content>
     <Content Include="build\bundles.json" />
     <Content Include="build\export.json" />
-    <Content Include="tsconfig.json" />
-    <Content Include="package.json" />
+    <Content Include="tsconfig.json">
+      <DependentUpon>App.config</DependentUpon>
+    </Content>
+    <Content Include="package.json">
+      <DependentUpon>App.config</DependentUpon>
+    </Content>
+    <Content Include="App.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
