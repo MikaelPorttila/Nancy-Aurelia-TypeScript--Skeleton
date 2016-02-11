@@ -1,28 +1,26 @@
 {
-  "name": "aurelia-skeleton-navigation-typescript",
-  "version": "1.0.0-beta.1.1.3",
-  "description": "A starter kit for building a standard navigation-style app with Aurelia and TypeScript.",
+  "name": "Nancy-Aurelia-skeleton",
+  "version": "1.0.0",
+  "description": "A simple Nancy/Aurelia skeleton project",
   "keywords": [
+    "nancy",
     "aurelia",
-    "navigation",
     "skeleton",
-    "typescript",
-    "vscode"
+    "typescript"
   ],
-  "homepage": "http://aurelia.io",
+  "homepage": "https://github.com/MikaelPorttila/Nancy-Aurelia-TypeScript--Skeleton",
   "bugs": {
-    "url": "https://github.com/aurelia/skeleton-navigation-typescript/issues"
+    "url": "https://github.com/MikaelPorttila/Nancy-Aurelia-TypeScript--Skeleton/issues"
   },
   "license": "CC0-1.0",
-  "author": "Mike Graham <mgraham@technicalmedia.com> (http://cmichaelgraham.io/)",
+  "author": "Mikael Porttila",
   "main": "dist/main.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/aurelia/skeleton-navigation-typescript"
+    "url": "https://github.com/MikaelPorttila/Nancy-Aurelia-TypeScript--Skeleton"
   },
   "scripts": {
-    "test": "gulp test",
-    "e2e": "gulp serve e2e"
+
   },
   "devDependencies": {
     "aurelia-bundler": "^0.3.0",
