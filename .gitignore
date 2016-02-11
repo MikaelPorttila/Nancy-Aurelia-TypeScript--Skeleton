@@ -213,5 +213,5 @@ GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
 
-!gulpbuild/**/*.js
-!gulpbuild/**/*.json
+!*/gulpbuild/**/*.js
+!*/gulpbuild/**/*.json
