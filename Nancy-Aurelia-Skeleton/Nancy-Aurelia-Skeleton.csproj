@@ -76,17 +76,17 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="build\args.js" />
-    <Content Include="build\paths.js" />
-    <Content Include="build\tasks\build.js" />
-    <Content Include="build\tasks\bundle.js" />
-    <Content Include="build\tasks\clean.js" />
-    <Content Include="build\tasks\dev.js" />
-    <Content Include="build\tasks\export-release.js" />
-    <Content Include="build\tasks\lint.js" />
-    <Content Include="build\tasks\prepare-release.js" />
-    <Content Include="build\tasks\serve.js" />
-    <Content Include="build\tasks\watch.js" />
+    <Content Include="gulpbuild\args.js" />
+    <Content Include="gulpbuild\paths.js" />
+    <Content Include="gulpbuild\tasks\build.js" />
+    <Content Include="gulpbuild\tasks\bundle.js" />
+    <Content Include="gulpbuild\tasks\clean.js" />
+    <Content Include="gulpbuild\tasks\dev.js" />
+    <Content Include="gulpbuild\tasks\export-release.js" />
+    <Content Include="gulpbuild\tasks\lint.js" />
+    <Content Include="gulpbuild\tasks\prepare-release.js" />
+    <Content Include="gulpbuild\tasks\serve.js" />
+    <Content Include="gulpbuild\tasks\watch.js" />
     <Content Include="config.js">
       <DependentUpon>App.config</DependentUpon>
     </Content>
@@ -114,8 +114,8 @@
     <Content Include="packages.config">
       <DependentUpon>App.config</DependentUpon>
     </Content>
-    <Content Include="build\bundles.json" />
-    <Content Include="build\export.json" />
+    <Content Include="gulpbuild\bundles.json" />
+    <Content Include="gulpbuild\export.json" />
     <Content Include="tsconfig.json">
       <DependentUpon>App.config</DependentUpon>
     </Content>
