@@ -15,16 +15,19 @@ TODO: Add installation instructions.
 
 ## Get started
 
-+ Run npm install on the project root folder.
-```
+1. Run npm install on the project root folder.
+
+ ```shell
 npm install
 ```
-+ Install jspm dependencies by running following command on the project root folder
-```
+2. Install jspm dependencies by running following command on the project root folder
+
+ ```shell
 jspm install
 ```
-+ Run gulp build task on the project root folder
-```
+3. Run gulp build task on the project root folder
+
+ ```shell
 gulp build
 ```
 
