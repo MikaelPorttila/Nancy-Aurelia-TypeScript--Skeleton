@@ -7,11 +7,12 @@ Skeleton contains:
  
 ~Work in progress~
 
-## Required Tool/External dependencies
+### Required Tools/External dependencies
 + NodeJs (npm)
 + gulp 
 + jspm
-TODO: Add installation instructions. 
+
+ TODO: Add installation instructions. 
 
 ## Get started
 
