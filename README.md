@@ -7,24 +7,28 @@ Skeleton contains:
  
 ~Work in progress~
 
-## Required Tool/External dependencies
+### Required Tools/External dependencies
 + NodeJs (npm)
 + gulp 
 + jspm
-TODO: Add installation instructions. 
+
+ TODO: Add installation instructions. 
 
 ## Get started
 
 1. Run npm install on the project root folder.
-```
+
+ ```shell
 npm install
 ```
 2. Install jspm dependencies by running following command on the project root folder
-```
+
+ ```shell
 jspm install
 ```
 3. Run gulp build task on the project root folder
-```
+
+ ```shell
 gulp build
 ```
 
