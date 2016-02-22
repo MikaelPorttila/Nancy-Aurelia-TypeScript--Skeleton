@@ -1,17 +1,7 @@
 ﻿using Nancy;
 using Nancy.Bootstrapper;
 using Nancy.TinyIoc;
-using Owin;
-namespace NancyAureliaSkeleton {
-
-    public class Startup {
-        public void Configuration(IAppBuilder builder) {
-
-            // Tell owin to delegate requests 
-            // to nancys handler
-            builder.UseNancy();
-        }
-    }
+namespace NancyAureliaSkeleton.Lib.System {
 
     public class ApplicationBootstrap : DefaultNancyBootstrapper {
         protected override void ApplicationStartup(TinyIoCContainer container, IPipelines pipelines) {

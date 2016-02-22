@@ -5,7 +5,7 @@ var bundles = require('../bundles.json');
 var config = {
   force: true,
   baseURL: '.',
-  configPath: './config.js',
+  configPath: './wwwroot/config.js',
   bundles: bundles.bundles
 };
 

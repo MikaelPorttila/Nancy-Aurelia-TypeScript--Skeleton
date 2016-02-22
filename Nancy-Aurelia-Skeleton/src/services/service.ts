@@ -1,0 +1,5 @@
+﻿
+export abstract class Service {
+
+
+}

@@ -3,9 +3,8 @@
 namespace NancyAureliaSkeleton.Modules {
     public class IndexModule : NancyModule {
         public IndexModule() {
-            Get["/"] = parameters => {
-                return View["Views/index.html"];
-            };
+            Get["/"] = _ => View["index.html"];
+            Get["/api/test"] = _ => "Hello World";
         }
     }
 }
