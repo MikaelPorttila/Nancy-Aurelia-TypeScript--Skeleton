@@ -141,18 +141,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="src\services\" />
     <Folder Include="Views\" />
     <Folder Include="wwwroot\styles\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="wwwroot\jspm_packages\**\*.d.ts" />
-    <TypeScriptCompile Include="src\app.ts" />
-    <TypeScriptCompile Include="src\blur-image.ts" />
-    <TypeScriptCompile Include="src\child-router.ts" />
-    <TypeScriptCompile Include="src\main.ts" />
-    <TypeScriptCompile Include="src\services\service.ts" />
-    <TypeScriptCompile Include="src\users.ts" />
-    <TypeScriptCompile Include="src\welcome.ts" />
+    <TypeScriptCompile Include="src\**\*.ts" />
     <TypeScriptCompile Include="typings\core-js\core-js.d.ts" />
     <TypeScriptCompile Include="typings\es6-promise\es6-promise.d.ts" />
     <TypeScriptCompile Include="typings\es6.d.ts" />
