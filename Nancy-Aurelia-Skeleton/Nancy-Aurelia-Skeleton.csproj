@@ -130,7 +130,7 @@
     <Content Include="package.json">
       <DependentUpon>App.config</DependentUpon>
     </Content>
-    <Content Include="App.config" />
+    <None Include="App.config" />
     <Content Include="post-deploy-script.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

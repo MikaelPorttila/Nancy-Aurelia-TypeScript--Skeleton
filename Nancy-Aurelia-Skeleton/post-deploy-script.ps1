@@ -24,11 +24,8 @@ $errs = ($res | ? { $_.gettype().Name -eq "ErrorRecord" -and $_.Exception.Messag
 if ($errs.Count -gt 0) {
     $errs | % { Write-Error $_ }
     exit 1
-} else {
-    Write-Host "Successfully ran 'jspm install -y'"
-}
+} 
 Write-Host "[jspm] install completed"
-
 
 # Gulp
 Write-Host "[Bundling] Begin"
