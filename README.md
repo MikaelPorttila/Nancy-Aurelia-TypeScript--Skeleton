@@ -1,6 +1,8 @@
 # Nancy-Aurelia-TypeScript--Skeleton
 Nancy + Aurelia (With TypeScript) skeleton.
 
+[Demo of this app running on azure] (http://nancyaurelia.azurewebsites.net/) 
+
 Skeleton contains:
 [x] NancyFX (Owin hosted)
 [X] Aurelia
