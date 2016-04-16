@@ -8,7 +8,7 @@ var url = require('url');
 // at http://localhost:9000
 gulp.task('serve', ['build'], function (done) {
 
-    var apiProxy = url.parse('http://localhost:1337/api');
+    var apiProxy = url.parse('http://localhost:51337/api');
     apiProxy.route = "/api";
     apiProxy.cookieRewrite = true;
 

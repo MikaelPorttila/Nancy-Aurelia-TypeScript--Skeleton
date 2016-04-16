@@ -215,3 +215,5 @@ ModelManifest.xml
 
 !*/gulpbuild/**/*.js
 !*/gulpbuild/**/*.json
+
+*/wwwroot/dist/

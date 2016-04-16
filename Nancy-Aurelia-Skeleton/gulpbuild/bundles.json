@@ -24,6 +24,8 @@
         "aurelia-loader-default",
         "aurelia-history-browser",
         "aurelia-logging-console",
+        "aurelia-fetch-client",
+        "fetch",
         "bootstrap",
         "bootstrap/css/bootstrap.css!text"
       ],
