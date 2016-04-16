@@ -42,6 +42,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
@@ -130,7 +131,7 @@
       <DependentUpon>App.config</DependentUpon>
     </Content>
     <Content Include="App.config" />
-    <Content Include="pre-build.ps1">
+    <Content Include="post-deploy-script.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Properties\PublishProfiles\ExampleFileSystemPublish.pubxml">
@@ -149,9 +150,9 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="wwwroot\jspm_packages\**\*.d.ts" />
-    <TypeScriptCompile Include="src\app.ts" />
-    <TypeScriptCompile Include="src\main.ts" />
-    <TypeScriptCompile Include="src\welcome.ts" />
+    <Content Include="src\app.ts" />
+    <Content Include="src\main.ts" />
+    <Content Include="src\welcome.ts" />
     <TypeScriptCompile Include="typings\core-js\core-js.d.ts" />
     <TypeScriptCompile Include="typings\es6-promise\es6-promise.d.ts" />
     <TypeScriptCompile Include="typings\es6.d.ts" />
@@ -179,6 +180,7 @@
     <TypeScriptSourceMap>True</TypeScriptSourceMap>
     <TypeScriptMapRoot />
     <TypeScriptSourceRoot />
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
@@ -202,13 +204,11 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  
   <Target Name="AddTsToContent" AfterTargets="CompileTypeScript">
     <ItemGroup>
-      <Content Include="@(TypeScriptCompile)" Condition="'$(Configuration)'=='Debug'"/>
+      <Content Include="@(TypeScriptCompile)" Condition="'$(Configuration)'=='Debug'" />
     </ItemGroup>
   </Target>
-  
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
