@@ -62,16 +62,16 @@
       <HintPath>packages\Microsoft.Owin.StaticFiles.3.0.1\lib\net45\Microsoft.Owin.StaticFiles.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Nancy, Version=1.4.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Nancy.1.4.3\lib\net40\Nancy.dll</HintPath>
+    <Reference Include="Nancy, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Nancy.2.0.0-alpha\lib\net45\Nancy.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Nancy.Hosting.Aspnet, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Nancy.Hosting.Aspnet.1.4.1\lib\net40\Nancy.Hosting.Aspnet.dll</HintPath>
     </Reference>
-    <Reference Include="Nancy.Owin, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Nancy.Owin.1.4.1\lib\net40\Nancy.Owin.dll</HintPath>
+    <Reference Include="Nancy.Owin, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Nancy.Owin.2.0.0-alpha\lib\net45\Nancy.Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
@@ -149,11 +149,11 @@
     <Folder Include="wwwroot\styles\" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="wwwroot\jspm_packages\**\*.d.ts" />
     <Content Include="src\app.ts" />
     <Content Include="src\main.ts" />
     <Content Include="src\welcome.ts" />
     <TypeScriptCompile Include="typings\core-js\core-js.d.ts" />
+    <TypeScriptCompile Include="wwwroot\jspm_packages\**\*.d.ts" />
     <TypeScriptCompile Include="typings\es6-promise\es6-promise.d.ts" />
     <TypeScriptCompile Include="typings\es6.d.ts" />
     <TypeScriptCompile Include="typings\tsd.d.ts" />
