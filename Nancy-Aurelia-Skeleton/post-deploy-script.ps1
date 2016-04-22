@@ -10,6 +10,7 @@ Set-Location $root
 $wwwroot = $root + "\wwwroot"
 
 # NPM INSTALL
+npm set progress=false
 $res = npm install 2>&1
 $errs = ($res | ? { $_.gettype().Name -eq "ErrorRecord" -and $_.Exception.Message.ToLower().Contains("err") })
 if ($errs.Count -gt 0) {

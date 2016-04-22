@@ -9,7 +9,7 @@ export class App {
         httpClient.configure(config => {
             config
                 .useStandardConfiguration()
-                .withBaseUrl('/api')
+                .withBaseUrl('/api/')
                 .withDefaults({
                     credentials: '*'
                 });
