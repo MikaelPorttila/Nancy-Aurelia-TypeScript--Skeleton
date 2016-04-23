@@ -145,7 +145,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\" />
     <Folder Include="wwwroot\styles\" />
   </ItemGroup>
   <ItemGroup>
